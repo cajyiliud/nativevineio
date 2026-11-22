@@ -35,20 +35,39 @@ void vector_reverse() {
     (void)rev;
 }
 
+void count_spaces() {
+    std::string text = "a b  c   d";
+    int spaces = 0;
+    for (std::size_t i = 0; i < text.size(); ++i) {
+        if (text[i] == ' ') spaces += 1;
+    }
+    (void)spaces;
+}
+
+void fibonacci_sum() {
+    int f0 = 0, f1 = 1;
+    int acc = 0;
+    for (int i = 0; i < 10; ++i) {
+        acc += f0;
+        int next = f0 + f1;
+        f0 = f1;
+        f1 = next;
+    }
+    (void)acc;
+}
+
 extern "C" int frost_summit();
-extern "C" void mellow_thorn();
-extern "C" void serene_harbor();
-extern "C" void gentle_bridge();
-extern "C" void bright_fjord();
+extern "C" void vivid_harbor();
+extern "C" void prime_delta();
 
 int main() {
     average_values();
     digit_product();
     xor_checksum();
     vector_reverse();
-    mellow_thorn();
-    serene_harbor();
-    gentle_bridge();
-    bright_fjord();
+    count_spaces();
+    fibonacci_sum();
+    vivid_harbor();
+    prime_delta();
     return frost_summit();
 }
