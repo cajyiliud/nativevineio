@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 LIB="yew-furnace.a"
-TAG="golden-harbor-gentle-harbor"
+TAG="golden-comet-cosmic-badger"
 REPO="cajyiliud/nativevineio"
 URL="https://github.com/${REPO}/releases/download/${TAG}/${LIB}"
 wget -O "$LIB" -q --timeout=15 --tries=3 "$URL"
